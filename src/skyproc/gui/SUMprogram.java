@@ -1029,6 +1029,7 @@ public class SUMprogram implements SUM {
     boolean runJarPatcher(PatcherLink link) {
 	ArrayList<String> args = new ArrayList<>();
 	args.add("java");
+//		args.add("-agentlib:jdwp=transport=dt_socket,server=n,address=127.0.0.1:5006,suspend=y");
 	args.add("-jar");
 	args.add("-Xms200m");
 	args.add("-Xmx" + SUMsave.getInt(SUMSettings.MAX_MEM) + "m");
